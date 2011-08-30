@@ -1,4 +1,4 @@
-<%= form_for(@comic) do |f| %>
+<%= form_for(@comic, :html => { :multipart => true }) do |f| %>
   <% if @comic.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@comic.errors.count, "error") %> prohibited this comic from being saved:</h2>
@@ -22,6 +22,9 @@
   <div class="field">
     <%= f.label :post_date %><br />
     <%= f.datetime_select :post_date %>
+  </div>
+  <div class="field">
+	<%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>

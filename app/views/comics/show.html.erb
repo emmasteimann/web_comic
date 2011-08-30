@@ -14,7 +14,10 @@
   <b>Post date:</b>
   <%= @comic.post_date %>
 </p>
-
+<p>
+	Images!!!! YAY!<br/>
+	<img src="<%= @comic.image %>"/>
+</p>
 
 <%= link_to 'Edit', edit_comic_path(@comic) %> |
 <%= link_to 'Back', comics_path %>
