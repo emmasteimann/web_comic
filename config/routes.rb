@@ -1,4 +1,7 @@
 PartyTime::Application.routes.draw do
+  
+  root :to => 'comics#index'
+  
   resources :comics
 
   # The priority is based upon order of creation:
