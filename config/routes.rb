@@ -1,6 +1,10 @@
 PartyTime::Application.routes.draw do
   
+  devise_for :users
+
   root :to => 'comics#index'
+  
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   
   resources :comics
 

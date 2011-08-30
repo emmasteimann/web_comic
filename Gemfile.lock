@@ -1,3 +1,21 @@
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: 7b1418be3b33ac77cb185c15e641292767112f08
+  specs:
+    devise (1.4.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
+
+GIT
+  remote: git://github.com/sferik/rails_admin.git
+  revision: e71eafaafd201227988034585303154011146713
+  specs:
+    rails_admin (0.0.1)
+      builder (~> 3.0.0)
+      haml (>= 3.1.0, < 3.3.0)
+      rails (~> 3.1.0.rc6)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -44,6 +62,8 @@ GEM
     erubis (2.7.0)
     execjs (1.2.4)
       multi_json (~> 1.0)
+    fastercsv (1.5.4)
+    haml (3.1.2)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.13)
@@ -56,6 +76,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.3)
+    orm_adapter (0.0.5)
     paperclip (2.3.16)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -107,16 +128,21 @@ GEM
     uglifier (1.0.2)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    warden (1.0.5)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  devise!
+  fastercsv
   jquery-rails
   json
   paperclip (~> 2.3)
   rails (= 3.1.0.rc8)
+  rails_admin!
   sass-rails (~> 3.1.0.rc)
   sqlite3
   uglifier
