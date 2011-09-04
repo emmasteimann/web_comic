@@ -7,6 +7,7 @@ class ComicsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @comics }
+      format.atom { render :layout => false }
     end
   end
 
