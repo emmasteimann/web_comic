@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc8'
 
+gem 'aws-s3', :require => 'sqlite3'
 gem "paperclip", "~> 2.3"
 
 gem 'fastercsv' # Only required on Ruby 1.8 and below

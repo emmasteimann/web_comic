@@ -49,6 +49,10 @@ GEM
     activesupport (3.1.0.rc8)
       multi_json (~> 1.0)
     arel (2.2.1)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
     cocaine (0.2.0)
@@ -130,11 +134,13 @@ GEM
       multi_json (>= 1.0.2)
     warden (1.0.5)
       rack (>= 1.0)
+    xml-simple (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-s3
   coffee-rails (~> 3.1.0.rc)
   devise!
   fastercsv
