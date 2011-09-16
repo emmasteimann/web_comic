@@ -3,8 +3,18 @@ class ComicsController < ApplicationController
   # GET /comics.json
   
   def index
-    @comics = Comic.all
+    #@comics = Comic.all
+    
+    #@previous = Comic.previous(@comics).first
+    #@next = Comic.next(@comics).first
 
+   # @comics = Comic.paginate(:page => params[:page], :per_page => 1, :conditions => ["created_at <= ?", Time.now], :order => "created_at DESC" )
+    
+    @comics = Comic.find(3)
+    @comprev = @comics.previous(1)
+    @comnext = @comics.next(1)
+   # @nextc = Comic.nextc
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @comics }
@@ -16,7 +26,9 @@ class ComicsController < ApplicationController
   # GET /comics/1.json
   def show
     @comic = Comic.find(params[:id])
-
+    @comprev = @comic.previous(1)
+    @comnext = @comic.next(1)
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @comic }

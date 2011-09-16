@@ -19,5 +19,10 @@
 	<img src="<%= @comic.image %>"/>
 </p>
 
+<a href="/comics/<%= @comprev.id if @comprev %>"><%= @comprev.id if @comprev %> </a>
+<%= @comic.title %>
+<a href="/comics/<%= @comnext.id if @comnext %>"><%= @comnext.id if @comnext %> </a>
+<%= @nextc %>
+<br/>
 <%= link_to 'Edit', edit_comic_path(@comic) %> |
 <%= link_to 'Back', comics_path %>
