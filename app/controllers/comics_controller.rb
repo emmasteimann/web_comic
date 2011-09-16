@@ -10,9 +10,10 @@ class ComicsController < ApplicationController
 
    # @comics = Comic.paginate(:page => params[:page], :per_page => 1, :conditions => ["created_at <= ?", Time.now], :order => "created_at DESC" )
     
-    @comics = Comic.find(3)
-    @comprev = @comics.previous(1)
-    @comnext = @comics.next(1)
+    @comics = Comic.recent.first
+    @cominit = Comic.initial.first
+    @comprev = @comics.previous
+    @comnext = @comics.next
    # @nextc = Comic.nextc
     
     respond_to do |format|
@@ -25,9 +26,20 @@ class ComicsController < ApplicationController
   # GET /comics/1
   # GET /comics/1.json
   def show
+    
     @comic = Comic.find(params[:id])
-    @comprev = @comic.previous(1)
-    @comnext = @comic.next(1)
+    @cominit = Comic.initial.first
+    @comprev = @comic.previous
+    @comnext = @comic.next
+    @comlast = Comic.recent.first
+    
+    if (@comlast.id != @comic.id)
+      @comfinal = @comlast
+    end
+    
+    if (@cominit.id != @comic.id)
+      @comfirst = @cominit
+    end
     
     respond_to do |format|
       format.html # show.html.erb

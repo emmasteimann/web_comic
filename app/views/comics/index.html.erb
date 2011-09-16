@@ -1,6 +1,32 @@
 <h1>Comics are Fancy...</h1>
+<p id="notice"><%= notice %></p>
 
-<%= @comprev.id if @comprev %>
+<p>
+  <b>Title:</b>
+  <%= @comics.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @comics.body %>
+</p>
+
+<p>
+  <b>Post date:</b>
+  <%= @comics.post_date %>
+</p>
+<p>
+	Images!!!! YAY!<br/>
+	<img src="<%= @comics.image %>"/>
+</p>
+
+<% if @cominit %>
+<a href="/comics/<%= @cominit.id %>">First</a>
+<% end %>
+<% if @comprev %>
+<a href="/comics/<%= @comprev.id %>">Previous</a>
+<% end %>
 <%= @comics.title %>
-<a href="/comics/<%= @comnext.id if @comnext %>"><%= @comnext.id if @comnext %> </a>
-<%= @nextc %>
+<% if @comnext %>
+<a href="/comics/<%= @comnext.id %>">Next</a>
+<% end %>

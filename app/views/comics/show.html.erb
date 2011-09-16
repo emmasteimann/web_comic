@@ -12,17 +12,27 @@
 
 <p>
   <b>Post date:</b>
-  <%= @comic.post_date %>
+  <%= @comic.post_date.to_date %>
 </p>
 <p>
 	Images!!!! YAY!<br/>
 	<img src="<%= @comic.image %>"/>
 </p>
 
-<a href="/comics/<%= @comprev.id if @comprev %>"><%= @comprev.id if @comprev %> </a>
+<% if @comfirst %>
+<a href="/comics/<%= @comfirst.id %>">First</a>
+<% end %>
+<% if @comprev %>
+<a href="/comics/<%= @comprev.id %>">Previous</a>
+<% end %>
 <%= @comic.title %>
-<a href="/comics/<%= @comnext.id if @comnext %>"><%= @comnext.id if @comnext %> </a>
-<%= @nextc %>
+<% if @comnext %>
+<a href="/comics/<%= @comnext.id %>">Next</a>
+<% end %>
+<% if @comfinal %>
+<a href="/comics/<%= @comfinal.id %>">Last</a>
+<% end %>
 <br/>
+<%= Time.now%>
 <%= link_to 'Edit', edit_comic_path(@comic) %> |
 <%= link_to 'Back', comics_path %>
