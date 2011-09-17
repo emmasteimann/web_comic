@@ -6,7 +6,6 @@ gem 'aws-s3', :require => 'sqlite3'
 gem "paperclip", "~> 2.3"
 #gem "will_paginate", "~> 3.0.pre2"
 #gem 'by_star', :git => 'git://github.com/radar/by_star.git'
-gem 'postgres-pr'
 gem 'fastercsv' # Only required on Ruby 1.8 and below
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git' # Devise must be required before RailsAdmin
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
