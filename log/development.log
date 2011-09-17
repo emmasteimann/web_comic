@@ -46399,3 +46399,47 @@ Served asset /comics.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 15:45:10 -0500 2011
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/comics/11" for 127.0.0.1 at Sat Sep 17 16:18:17 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-17 21:18:17.563978' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-17 21:18:17.623536' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-17 21:18:17.630466' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+  [1m[36mComic Load (0.1ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-17 21:18:17.563909' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+Rendered comics/show.html.erb within layouts/application (308.6ms)
+Completed 200 OK in 423ms (Views: 392.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /comics.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 16:18:18 -0500 2011
+Served asset /night.css - 304 Not Modified (0ms)

@@ -3,7 +3,7 @@
 <head>
   <title>Something About Radishes</title>
   <%= stylesheet_link_tag "scaffolds","comics", "reset" %>
-	<% if Time.now.hour < 5 or Time.now.hour > 18 %>
+	<% if Time.now.hour < 6 or Time.now.hour > 18 %>
 	<%= stylesheet_link_tag "night" %>
 	<% else %>
 	<%= stylesheet_link_tag "day" %>
