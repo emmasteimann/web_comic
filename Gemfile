@@ -16,10 +16,7 @@ gem 'sqlite3'
 
 gem 'json'
 
-group :production do
-  # gems specifically for Heroku go here
-  gem "pg"
-end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
