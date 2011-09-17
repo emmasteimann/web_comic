@@ -45373,3 +45373,43 @@ Served asset /day.css - 304 Not Modified (0ms)
 
 Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 14:54:37 -0500 2011
 Served asset /reset.css - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateComics (20110830042210)
+Migrating to AddAttachmentImageToComic (20110830050631)
+Migrating to DeviseCreateUsers (20110830053544)
+Migrating to CreateRailsAdminHistoriesTable (20110830053555)
+Migrating to CreateComments (20110830054142)
+Migrating to AddAdminToUser (20110903053049)
+Migrating to AddDisabledToComics (20110916160225)
+Migrating to CreateAssets (20110917023125)
+Migrating to AddAttachmentImageToAssets (20110917023321)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("assets")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("comics")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateComics (20110830042210)
+Migrating to AddAttachmentImageToComic (20110830050631)
+Migrating to DeviseCreateUsers (20110830053544)
+Migrating to CreateRailsAdminHistoriesTable (20110830053555)
+Migrating to CreateComments (20110830054142)
+Migrating to AddAdminToUser (20110903053049)
+Migrating to AddDisabledToComics (20110916160225)
+Migrating to CreateAssets (20110917023125)
+Migrating to AddAttachmentImageToAssets (20110917023321)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("assets")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("comics")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
