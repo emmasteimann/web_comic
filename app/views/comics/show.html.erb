@@ -1,54 +1,62 @@
-<p id="notice"><%= notice %></p>
+<div class="wrapper">
+<div id="banner"></div>
+	<div class="comic_area">
+		<% if @comfirst %>
+			<a data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>">First</a>
+		<% end %>
+		<% if @comprev %>
+			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
+		<% end %>
+		<%= @comic.title %>
+		<% if @comnext %>
+			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
+		<% end %>
+		<% if @comfinal %>
+			<a data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>">Last</a>
+		<% end %>
+		<p>
+		  <b>Title:</b>
+		  <%= @comic.title %>
+		</p>
 
-<p>
-  <b>Title:</b>
-  <%= @comic.title %>
-</p>
+		<p>
+		  <b>Body:</b>
+		  <%= @comic.body %>
+		</p>
 
-<p>
-  <b>Body:</b>
-  <%= @comic.body %>
-</p>
-
-<p>
-  <b>Post date:</b>
-  <%= @comic.post_date.to_date %>
-</p>
-<p>
-	Images!!!! YAY!<br/>
-	<img src="<%= @comic.image %>"/>
-</p>
-
-<% if @comfirst %>
-<a data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>">First</a>
-<% end %>
-<% if @comprev %>
-<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
-<% end %>
-<%= @comic.title %>
-<% if @comnext %>
-<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
-<% end %>
-<% if @comfinal %>
-<a data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>">Last</a>
-<% end %>
-<br/>
-<%= Time.now %>
-<%= link_to 'Edit', edit_comic_path(@comic) %> |
-<%= link_to 'Back', comics_path %>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
-	var disqus_url = 'http://somethingaboutradishes.com#<%= @comic.id %>';
-	var disqus_identifier = '<%= @comic.id %>';
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+		<p>
+		  <b>Post date:</b>
+		  <%= @comic.post_date.to_date %>
+		</p>
+		<p>
+			Images!!!! YAY!<br/>
+			<img src="<%= @comic.image %>"/>
+		</p>
+		<% if @comfirst %>
+			<a data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>">First</a>
+		<% end %>
+		<% if @comprev %>
+			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
+		<% end %>
+		<%= @comic.title %>
+		<% if @comnext %>
+			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
+		<% end %>
+		<% if @comfinal %>
+			<a data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>">Last</a>
+		<% end %>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
+		var disqus_url = 'http://somethingaboutradishes.com#<%= @comic.id %>';
+		var disqus_identifier = '<%= @comic.id %>';
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+	</div>
+</div>

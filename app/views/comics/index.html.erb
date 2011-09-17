@@ -1,47 +1,51 @@
-<h1>Comics are Fancy...</h1>
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Title:</b>
-  <%= @comics.title %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @comics.body %>
-</p>
-
-<p>
-  <b>Post date:</b>
-  <%= @comics.post_date %>
-</p>
-<p>
-	Images!!!! YAY!<br/>
-	<img src="<%= @comics.image %>"/>
-</p>
-
-<% if @cominit %>
-<a data-disqus-identifier="<%= @cominit.id %>" href="/comics/<%= @cominit.id %>">First</a>
-<% end %>
-<% if @comprev %>
-<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
-<% end %>
-<%= @comics.title %>
-<% if @comnext %>
-<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
-<% end %>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
-	var disqus_url = 'http://somethingaboutradishes.com#<%= @comics.id %>';
-	var disqus_identifier = '<%= @comics.id %>';
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-
+<div class="wrapper">
+<div id="banner"></div>
+	<div class="comic_area">
+		<% if @cominit %>
+			<a data-disqus-identifier="<%= @cominit.id %>" href="/comics/<%= @cominit.id %>">First</a> 
+		<% end %> 
+		<% if @comprev %> 
+			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a> 
+		<% end %> 
+		<%= @comics.title %> 
+		<% if @comnext %> 
+			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a> 
+		<% end %>
+		<p>
+			<b>Title:</b> <%= @comics.title %>
+		</p>
+		<p>
+			<b>Body:</b> <%= @comics.body %>
+		</p>
+		<p>
+			<b>Post date:</b> <%= @comics.post_date %>
+		</p>
+		<p>
+			Images!!!! YAY!<br>
+			<img src="<%= @comics.image %>">
+		</p>
+		<% if @cominit %>
+			<a data-disqus-identifier="<%= @cominit.id %>" href="/comics/<%= @cominit.id %>">First</a> 
+		<% end %> 
+		<% if @comprev %> 
+			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a> 
+		<% end %> 
+		<%= @comics.title %> 
+		<% if @comnext %> 
+			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a> 
+		<% end %>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
+		var disqus_url = 'http://somethingaboutradishes.com#<%= @comics.id %>';
+		var disqus_identifier = '<%= @comics.id %>';
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+	</div>
+</div>

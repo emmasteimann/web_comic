@@ -3,7 +3,7 @@ class ComicsController < ApplicationController
   # GET /comics.json
   
   def index
-    #@comics = Comic.all
+    #@assets = Asset.all.first
     
     #@previous = Comic.previous(@comics).first
     #@next = Comic.next(@comics).first

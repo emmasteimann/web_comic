@@ -1,3 +1,21 @@
 // Place all the styles related to the comics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+	margin: 0 auto;
+	width: 1024px;
+	#banner{
+		width: 1024px;
+		height: 485px;
+	}
+	.comic_area {
+		background-color: #d7d5ce;
+		width: 900px;
+		margin: -60px auto 0;
+	}
+}
+#disqus_thread {
+	margin-bottom: 10px;
+	width: 300px;
+}
