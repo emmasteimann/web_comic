@@ -16,6 +16,10 @@ gem 'sqlite3'
 
 gem 'json'
 
+gem "execjs"
+
+gem "therubyracer"
+
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
