@@ -1,7 +1,6 @@
 class Comic < ActiveRecord::Base
   has_many :comments
   
-  storage_loc = "#{Rails.root}/config/s3.yml"
   storage_path = "comic_:id.:extension"
   bucket = "SAR_comic"
   

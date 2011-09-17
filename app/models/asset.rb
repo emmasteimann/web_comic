@@ -1,6 +1,5 @@
 class Asset < ActiveRecord::Base
-  
-  storage_loc = "#{Rails.root}/config/s3.yml"
+
   storage_path = "asset_:id.:extension"
   bucket = "SAR_comic"
   
@@ -8,7 +7,10 @@ class Asset < ActiveRecord::Base
   
   has_attached_file :image,
     :storage => :s3,
-    :s3_credentials => storage_loc,
+    :s3_credentials => {
+      :access_key_id => ENV['S3_KEY'],
+      :secret_access_key => ENV['S3_SECRET']
+    },
     :path => storage_path,
     :bucket => bucket
     

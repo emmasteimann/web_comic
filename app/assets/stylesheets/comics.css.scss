@@ -3,19 +3,79 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .wrapper {
+	color: #666666;
+	font-family: Helvetica,Arial,sans-serif;
 	margin: 0 auto;
 	width: 1024px;
 	#banner{
 		width: 1024px;
 		height: 485px;
 	}
-	.comic_area {
+	#comic_area {
 		background-color: #d7d5ce;
 		width: 900px;
 		margin: -60px auto 0;
+		border-top: 6px solid #888B88;
+		.comic_info {
+			margin-top: 50px;
+			width: 400px;
+			padding-left: 40px;
+			h2 {
+				font-size: 24px;
+			}
+			.comic_description {
+				padding-top: 10px;
+				border-top: 3px solid #888B88;
+				min-height: 100px;
+			}
+		}
+		.comic_display_area {
+			margin: 0 auto;
+			text-align: center;
+		}
+		.navigation {
+			height: 25px;
+		    margin: 14px auto 10px 122px;
+		    position: relative;
+		    width: 658px;
+		}
+		.nav_arrows {
+			background: url("http://s3.amazonaws.com/SAR_comic/asset_9.png") no-repeat 0 0 transparent;
+			width: 24px;
+			display: inline-block;
+			height: 25px;
+			text-indent: -9999px;
+			overflow: hidden;
+			&.first {
+				background-position: 0 0;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+			&.previous {
+				background-position: -25px 0;
+				    left: 120px;
+				    position: absolute;
+				    top: 0;
+				    width: 20px;
+			}
+			&.next {
+				background-position: -45px 0;
+				position: absolute;
+				right: 120px;
+				top: 0;
+				width: 20px;
+			}
+			&.last {
+				background-position: -66px 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
 	}
 }
 #disqus_thread {
 	margin-bottom: 10px;
-	width: 300px;
+	width: 400px;
 }

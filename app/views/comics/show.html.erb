@@ -1,62 +1,58 @@
 <div class="wrapper">
 <div id="banner"></div>
-	<div class="comic_area">
+	<div id="comic_area">
+		<h1>Something About Radishes</h1>
+		<div class="navigation">
 		<% if @comfirst %>
-			<a data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>">First</a>
+			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>#comic_area">First</a>
 		<% end %>
 		<% if @comprev %>
-			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
+			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>#comic_area">Previous</a>
 		<% end %>
-		<%= @comic.title %>
 		<% if @comnext %>
-			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
+			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a>
 		<% end %>
 		<% if @comfinal %>
-			<a data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>">Last</a>
+			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>#comic_area">Last</a>
 		<% end %>
-		<p>
-		  <b>Title:</b>
-		  <%= @comic.title %>
-		</p>
-
-		<p>
-		  <b>Body:</b>
-		  <%= @comic.body %>
-		</p>
-
-		<p>
-		  <b>Post date:</b>
-		  <%= @comic.post_date.to_date %>
-		</p>
-		<p>
-			Images!!!! YAY!<br/>
-			<img src="<%= @comic.image %>"/>
-		</p>
+		</div>
+		<div class="comic_display_area">
+			<p>
+				<img alt="<%= @comic.title %>" src="<%= @comic.image %>">
+			</p>
+		</div>
+		<div class="navigation">
 		<% if @comfirst %>
-			<a data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>">First</a>
+			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>#comic_area">First</a>
 		<% end %>
 		<% if @comprev %>
-			<a data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>">Previous</a>
+			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>#comic_area">Previous</a>
 		<% end %>
-		<%= @comic.title %>
 		<% if @comnext %>
-			<a data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>">Next</a>
+			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a>
 		<% end %>
 		<% if @comfinal %>
-			<a data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>">Last</a>
+			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>#comic_area">Last</a>
 		<% end %>
-		<div id="disqus_thread"></div>
-		<script type="text/javascript">
-		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
-		var disqus_identifier = '/comics/<%= @comic.id %>';
-		var disqus_developer = 1;
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-		</script>
+		</div>
+		<div class="comic_info">
+			<h2><%= @comic.title %></h2>
+				<div class="comic_description">
+					<%= @comic.body %>
+				</div>
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
+				var disqus_identifier = '/comics/<%= @comic.id %>';
+				var disqus_developer = 1;
+				/* * * DON'T EDIT BELOW THIS LINE * * */
+				(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+		</div>
 	</div>
 </div>
