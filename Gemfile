@@ -17,7 +17,7 @@ gem 'sqlite3'
 gem 'json'
 
 gem "execjs"
-
+gem "disqus"
 gem "therubyracer"
 
 group :production do
