@@ -11,7 +11,7 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git' # Devise must 
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'disqus'
 gem 'sqlite3'
 
 gem 'json'
