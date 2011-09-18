@@ -1,0 +1,102 @@
+<div class="comic_tag">
+<script type="text/javascript" language="javascript">
+/*
+JavaScript Bookmarking Script
+=============================
+Developed originally for easy reading of webcomics :D
+Feel free to use this script in anyway you see fit,
+as far as I am concerned and aware the below code 
+is copyright free.
+
+Script Author: Ash Young
+Email: ash@evoluted.net
+Website: http://evoluted.net/
+
+Default Graphics: Pontus Madsen
+Website: www.little-gamers.com
+*/
+
+/*
+Config Settings
+*/
+var cl = 31;
+var imgTag = 'http://s3.amazonaws.com/SAR_comic/asset_10.gif';		//add tag image.
+var imgClearOff = 'http://s3.amazonaws.com/SAR_comic/asset_14.gif';	//no comic tagged, clear not possible
+var imgGotoOff = 'http://s3.amazonaws.com/SAR_comic/asset_12.gif';	//no comic tagged, goto not possible
+var imgClearOn = 'http://s3.amazonaws.com/SAR_comic/asset_13.gif';	//clear a tag, shows when comic previously tagged
+var imgGotoOn = 'http://s3.amazonaws.com/SAR_comic/asset_11.gif';	//shows when a comic is tagged  
+var imgInfo = 'http://s3.amazonaws.com/SAR_comic/asset_15.gif';  	//img that displays the help
+
+
+/*
+Now write out the applicable links
+*/
+createCookie('t', 1);
+var c = readCookie('t');
+if(c && document.getElementById) {
+	var l = readCookie('bm');
+	var gt = imgGotoOff;
+	var ct = imgClearOff;
+	if(l) {
+		gt = imgGotoOn;
+		ct = imgClearOn;
+	}
+	document.write('<a href="#" onClick="bm();return false;"><img src="'+imgTag+'" alt="Tag This Comic" border="0"></a>');
+	document.write('<a href="#" onClick="gto();return false;"><img src="'+gt+'" alt="Goto Tag" border="0" id="gtc"></a>');
+	document.write('<a href="#" onClick="bmc();return false;"><img src="'+ct+'" alt="Clear Tag" border="0" id="rmc"></a>');
+	document.write('<a href="#" onMouseOver="document.getElementById(\'bmh\').style.visibility=\'visible\';" onMouseOut="document.getElementById(\'bmh\').style.visibility=\'hidden\';" onClick="return false;"><img src="'+imgInfo+'" alt="" border="0"></a>');
+	document.write('<div id="bmh" style="padding:4px; font-size:small;margin-left:320px;margin-top:0px;font-family:Arial, Helvetica, sans-serif;position:absolute;width:250px;color:#000000;background-color:#ffffff;border: 1px solid #CFCFCF;visibility:hidden;text-align:left;z-index: 1;"><Strong>What is this?</strong><Br><Br>This feature allows you to remember how far you got reading this comic. <br><br>All you have to do is hit \'Tag This Comic\' and next time you return to the site you can easily keep reading from where you left off.<br><br>Pretty good if you are reading through the archives, or if you only visit the site once every now and then..</div>');
+}
+
+/*
+Below are our functions for this little script
+*/
+function bm() {
+	if(document.getElementById) {
+		document.getElementById('gtc').src = imgGotoOn;
+		document.getElementById('rmc').src = imgClearOn;
+	}
+	createCookie("bm", window.location, cl);
+}
+
+function bmc() {
+	if(document.getElementById) {
+		document.getElementById('gtc').src = imgGotoOff;
+		document.getElementById('rmc').src = imgClearOff;
+
+	}
+	createCookie("bm","",-1);
+}
+
+function gto() {
+	var g = readCookie('bm');
+	if(g) {
+		window.location = g;
+	}	
+}
+
+/*
+The follow functions have been borrowed from Peter-Paul Koch.
+Please find them here: http://www.quirksmode.org
+*/
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	} else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+		</script>
+</div>
