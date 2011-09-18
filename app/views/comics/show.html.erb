@@ -1,6 +1,6 @@
 <div class="wrapper">
 <div id="banner"></div>
-	<div id="comic_area">
+	<div id="comic_area" class="clearfix">
 		<h1>Something About Radishes</h1>
 		<div class="navigation">
 		<% if @comfirst %>
@@ -17,9 +17,11 @@
 		<% end %>
 		</div>
 		<div class="comic_display_area">
+			
 			<p>
 				<img alt="<%= @comic.title %>" src="<%= @comic.image %>">
 			</p>
+			<%= render 'bookmark' %>
 		</div>
 		<div class="navigation">
 		<% if @comfirst %>
@@ -52,6 +54,40 @@
 				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 				})();
+			</script>
+		</div>
+		<div class="social_area">
+			<h2>Rumors a little bird told me...</h2>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 30000,
+			  width: 350,
+			  height: 300,
+			  theme: {
+			    shell: {
+			      background: '#d7d5ce',
+			      color: '#666666'
+			    },
+			    tweets: {
+			      background: '#ebebeb',
+			      color: '#666666',
+			      links: '#633aa1'
+			    }
+			  },
+			  features: {
+			    scrollbar: false,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: false,
+			    behavior: 'all'
+			  }
+			}).render().setUser('esteimann').start();
 			</script>
 		</div>
 	</div>
