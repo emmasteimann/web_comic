@@ -5,6 +5,11 @@ body {
 	min-height: 768px;
 }
 .wrapper {
+	a {
+		&:hover{
+			background: transparent;
+		}
+	}
 	color: #666666;
 	font-family: Helvetica,Arial,sans-serif;
 	margin: 0 auto;
@@ -25,11 +30,7 @@ body {
 			font-size: 24px;
 		}
 		.comic_tag{
-			a {
-				&:hover{
-					background: transparent;
-				}
-			}
+			
 		}
 		.comic_info {
 			margin-top: 50px;
@@ -99,6 +100,17 @@ body {
 #disqus_thread {
 	margin-bottom: 10px;
 	width: 400px;
+}
+.addthis_toolbox.addthis_pill_combo a {
+    float: left;
+}
+.addthis_toolbox.addthis_pill_combo a.addthis_button_tweet,
+.addthis_toolbox.addthis_pill_combo a.addthis_counter {
+    margin-top: -2px;
+}
+.addthis_button_compact .at15t_compact {
+    margin-right: 4px;
+    float: left;
 }
 .clearfix:after {
 	content: ".";
