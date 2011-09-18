@@ -57988,3 +57988,863 @@ Served asset /comics.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:07:32 -0500 2011
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/assets/10" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+  Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"model_name"=>"assets", "id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = 10 LIMIT 1
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_flash.html.haml (2.6ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/main (371.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_title.html.haml (3.3ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_header.html.haml (11.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_navigation.html.haml (105.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_sidebar.html.haml (111.0ms)
+Completed 200 OK in 734ms (Views: 611.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/rails_admin.css - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/theme/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/theme/base.css - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/theme/jquery.tipsy.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/theme/jquery.tipsy.css - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/style.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/theme/activo/style.css - 200 OK (9ms)
+
+
+Started GET "/assets/rails_admin/aristo/jquery-ui-1.8.7.custom.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/aristo/jquery-ui-1.8.7.custom.css - 200 OK (11ms)
+
+
+Started GET "/assets/rails_admin/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/base.css - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/dashboard.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/dashboard.css - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/list.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/list.css - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/form.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/form.css - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/show.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:16 -0500 2011
+Served asset /rails_admin/show.css - 200 OK (6ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.css - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.css - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.css - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.filtering-select.css - 200 OK (9ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.timeline.css - 200 OK (9ms)
+
+
+Started GET "/assets/rails_admin/jquery-1.5.1.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery-1.5.1.js - 200 OK (25ms)
+
+
+Started GET "/assets/rails_admin/jquery-ui-1.8.14.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery-ui-1.8.14.js - 200 OK (13ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.js - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/activo/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/activo/application.js - 200 OK (6ms)
+
+
+Started GET "/assets/rails_admin/activo/jquery.tipsy.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/activo/jquery.tipsy.js - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.datetimepicker.js - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.filter-box.js - 200 OK (9ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.js - 200 OK (11ms)
+
+
+Started GET "/assets/rails_admin/rails.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/rails.js - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.filtering-select.js - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.remote-form.js - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/ra.timeline.js - 200 OK (9ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.js - 200 OK (10ms)
+
+
+Started GET "/assets/rails_admin/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/application.js - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/rails_admin.js - 200 OK (11ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/calendar-hover.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/calendar-hover.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/edit.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/edit.png - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/cross.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/cross.png - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/config.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/config.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/account.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/account.png - 200 OK (8ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/logout.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/logout.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/bgd.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/bgd.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/boxbar-background.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/boxbar-background.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/button-background.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/button-background.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/arrow.png" for 127.0.0.1 at Sat Sep 17 21:13:17 -0500 2011
+Served asset /rails_admin/theme/activo/images/arrow.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/button-background-active.png" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/theme/activo/images/button-background-active.png - 200 OK (5ms)
+
+
+Started GET "/admin/assets/10/edit" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+  Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"assets", "id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = 10 LIMIT 1
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_flash.html.haml (0.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_form_field.html.haml (3.6ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_form_field.html.haml (1.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_form_paperclip_file.html.haml (12.6ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_form_fieldset.html.haml (27.8ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_submit_buttons.html.haml (6.6ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/main (92.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_title.html.haml (2.0ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_header.html.haml (7.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_navigation.html.haml (9.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_sidebar.html.haml (11.1ms)
+Completed 200 OK in 284ms (Views: 144.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/rails_admin.css - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/aristo/jquery-ui-1.8.7.custom.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/aristo/jquery-ui-1.8.7.custom.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/style.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/theme/activo/style.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/jquery.tipsy.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/theme/jquery.tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:19 -0500 2011
+Served asset /rails_admin/theme/base.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/base.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/dashboard.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/list.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/list.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/form.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/form.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/show.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/show.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.filtering-select.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.timeline.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery-1.5.1.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery-1.5.1.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/config.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/config.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/account.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/account.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/logout.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/logout.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/calendar-hover.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/calendar-hover.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery-ui-1.8.14.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery-ui-1.8.14.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/activo/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/activo/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/activo/jquery.tipsy.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/activo/jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.datetimepicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.filter-box.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.filtering-select.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/rails.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/rails.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.remote-form.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/ra.timeline.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/rails_admin.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/cross.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/cross.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/tick.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/tick.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/add.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/add.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/edit.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/edit.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/delete.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/delete.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/bgd.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/bgd.png - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/boxbar-background.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/boxbar-background.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/button-background.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/button-background.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/arrow.png" for 127.0.0.1 at Sat Sep 17 21:13:20 -0500 2011
+Served asset /rails_admin/theme/activo/images/arrow.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/button-background-active.png" for 127.0.0.1 at Sat Sep 17 21:13:26 -0500 2011
+Served asset /rails_admin/theme/activo/images/button-background-active.png - 200 OK (0ms)
+
+
+Started PUT "/admin/assets/10" for 127.0.0.1 at Sat Sep 17 21:13:26 -0500 2011
+  Processing by RailsAdmin::MainController#update as HTML
+  Parameters: {"authenticity_token"=>"DQzYwcVCWA+d0DPQsnsvwJsmtah8Jw0CqAdg+WMYb+E=", "utf8"=>"✓", "model_name"=>"assets", "id"=>"10", "_save"=>"", "asset"=>{"name"=>"1_gif", "alt_text"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x12a3ade98 @headers="Content-Disposition: form-data; name=\"asset[image]\"; filename=\"1.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/var/folders/6q/6qXl88KHGfWJ3Ixw3UM6zE+++TQ/-Tmp-/RackMultipart20110917-33667-18wewzj-0>, @content_type="image/gif", @original_filename="1.gif">}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAsset Load (0.2ms)[0m  SELECT "assets".* FROM "assets" WHERE "assets"."id" = 10 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "assets" SET "image_updated_at" = '2011-09-18 02:13:27.145557', "image_file_size" = 428, "updated_at" = '2011-09-18 02:13:27.147307' WHERE "assets"."id" = 10[0m
+[paperclip] Saving attachments.
+[paperclip] deleting asset_10.gif
+[paperclip] saving asset_10.gif
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "rails_admin_histories" ("created_at", "item", "message", "month", "table", "updated_at", "username", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 17 Sep 2011 21:13:27 CDT -05:00], ["item", 10], ["message", "Changed image_file_size, image_updated_at"], ["month", 9], ["table", "Asset"], ["updated_at", Sat, 17 Sep 2011 21:13:27 CDT -05:00], ["username", "godwearspants@gmail.com"], ["year", 2011]]
+Redirected to http://localhost:3000/admin/assets
+Completed 302 Found in 777ms
+
+
+Started GET "/admin/assets" for 127.0.0.1 at Sat Sep 17 21:13:27 -0500 2011
+  Processing by RailsAdmin::MainController#list as HTML
+  Parameters: {"model_name"=>"assets"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "assets" 
+  [1m[36mAsset Load (0.3ms)[0m  [1mSELECT "assets".* FROM "assets" ORDER BY assets.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "assets" 
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_flash.html.haml (0.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/list.html.haml within layouts/rails_admin/main (333.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_title.html.haml (1.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_header.html.haml (6.3ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/rails_admin/main/_navigation.html.haml (8.6ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/bundler/gems/rails_admin-e71eafaafd20/app/views/layouts/rails_admin/_sidebar.html.haml (10.3ms)
+Completed 200 OK in 533ms (Views: 370.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/rails_admin.css - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/theme/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/base.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/jquery.tipsy.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/jquery.tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/style.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/style.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/aristo/jquery-ui-1.8.7.custom.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/aristo/jquery-ui-1.8.7.custom.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/base.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/base.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/dashboard.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/list.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/list.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/form.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/form.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/show.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/show.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.filtering-select.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.timeline.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery-1.5.1.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery-1.5.1.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/config.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/config.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/account.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/account.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery-ui-1.8.14.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery-ui-1.8.14.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery.ui.timepicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/activo/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/activo/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/activo/jquery.tipsy.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/activo/jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.datetimepicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.filter-box.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.filtering-multiselect.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.filtering-select.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/rails.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/rails.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.remote-form.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/ra.timeline.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/jquery.colorpicker.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/rails_admin.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/session/logout.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/session/logout.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/add.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/add.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/cross.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/cross.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/24/show.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/24/show.png - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/24/edit.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/24/edit.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/24/cross.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/24/cross.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/pdf.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/pdf.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/icons/calendar-hover.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/icons/calendar-hover.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/bgd.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/bgd.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/boxbar-background.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/boxbar-background.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/button-background.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/button-background.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/search-button.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/search-button.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/messages/notice.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/messages/notice.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails_admin/bullet_arrow_down.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/bullet_arrow_down.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/tipsy.gif" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/tipsy.gif - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/theme/activo/images/arrow.png" for 127.0.0.1 at Sat Sep 17 21:13:28 -0500 2011
+Served asset /rails_admin/theme/activo/images/arrow.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:13:32.182322' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:13:32.182410' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:13:32.198096' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:13:32.199423' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+Rendered comics/_bookmark.html.erb (0.4ms)
+Rendered comics/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 27.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /comics.css - 200 OK (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /night.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /jquery.js - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /comics.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:13:32 -0500 2011
+Served asset /application.js - 200 OK (16ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Sep 17 21:16:12 -0500 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:16:13.051770' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:16:13.051832' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.4ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:16:13.104416' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:16:13.112299' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+Rendered comics/_bookmark.html.erb (0.5ms)
+Rendered comics/index.html.erb within layouts/application (216.3ms)
+Compiled comics.css  (44ms)  (pid 37858)
+Completed 200 OK in 407ms (Views: 380.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /comics.css - 200 OK (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /night.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /comics.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:16:13 -0500 2011
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Sep 17 21:17:33 -0500 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:17:34.055595' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:17:34.055720' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:17:34.070607' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:17:34.072043' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/index.html.erb within layouts/application (2.2ms)
+Compiled comics.css  (43ms)  (pid 37858)
+Completed 200 OK in 73ms (Views: 61.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /comics.css - 200 OK (3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /night.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /comics.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:34 -0500 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:17:49.800100' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:17:49.800183' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:17:49.815019' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:17:49.816500' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/index.html.erb within layouts/application (2.5ms)
+Compiled comics.css  (47ms)  (pid 37858)
+Completed 200 OK in 77ms (Views: 64.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /comics.css - 200 OK (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /night.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /comics.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:17:49 -0500 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/comics/9" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:18:04.689178' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-07 00:00:00.000000' AND post_date <= '2011-09-18 02:18:04.704593' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-07 00:00:00.000000' AND post_date <= '2011-09-18 02:18:04.705924' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0
+  [1m[36mComic Load (0.1ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:18:04.689090' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 27ms (Views: 14.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /comics.css - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /night.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /comics.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:04 -0500 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/comics/11" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:18:15.520355' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date < '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:18:15.535702' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  [1m[36mComic Load (0.1ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date > '2011-09-09 00:00:00.000000' AND post_date <= '2011-09-18 02:18:15.537237' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-09-18 02:18:15.520281' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 12.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /comics.css - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/night.css?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /night.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /comics.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 21:18:15 -0500 2011
+Served asset /application.js - 200 OK (0ms)
