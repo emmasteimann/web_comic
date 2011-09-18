@@ -52466,3 +52466,122 @@ Served asset /comics.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Sep 17 18:49:51 -0500 2011
 Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:06:10 -0500 2011
+
+LoadError (no such file to load -- geonames):
+  app/models/comic.rb:2
+  app/controllers/comics_controller.rb:1
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:07:30 -0500 2011
+
+LoadError (no such file to load -- geonames):
+  app/models/comic.rb:2
+  app/controllers/comics_controller.rb:1
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:08:11 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 123ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12aa7a3e8>):
+  app/controllers/application_controller.rb:6:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:09:02 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 39ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12aa79560>):
+  app/controllers/comics_controller.rb:7:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:09:03 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12a6966c8>):
+  app/controllers/comics_controller.rb:7:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:09:04 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12a32e0a8>):
+  app/controllers/comics_controller.rb:7:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:11:44 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 42ms
+
+NameError (undefined local variable or method `current_comic' for #<ComicsController:0x129cf3eb8>):
+  app/controllers/comics_controller.rb:7:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (105.5ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:12:45 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 35ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12a6fee58>):
+  app/controllers/application_controller.rb:6:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/comics/10" for 127.0.0.1 at Sat Sep 17 19:12:45 -0500 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `time_zone' for #<User:0x12a3d6190>):
+  app/controllers/application_controller.rb:6:in `set_time_zone'
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)

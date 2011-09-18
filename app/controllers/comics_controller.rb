@@ -2,6 +2,7 @@ class ComicsController < ApplicationController
   # GET /comics
   # GET /comics.json
   
+  
   def index
     #@assets = Asset.all.first
     
