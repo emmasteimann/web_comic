@@ -30,7 +30,5 @@ class Comic < ActiveRecord::Base
   scope :by_year, lambda { |your_year|
     where("post_date >= ? AND post_date <= ?", DateTime.strptime( your_year + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( your_year + "/12/31", "%Y/%m/%d").to_time)
   }
-  #scope :prevc, lambda { |current| {:conditions => ['created_at < ? AND post_date <= ?', current, Time.now], :limit => 1, :offset => 1, :order => "created_at DESC"} }
-  #scope :nextc, lambda { |current| {:conditions => ['created_at > ? AND post_date <= ?', current, Time.now], :limit => 1, :offset => 1, :order => "created_at"} }
 end
   
