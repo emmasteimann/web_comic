@@ -1,0 +1,16 @@
+<div class="wrapper">
+<div id="banner"></div>
+	<div id="comic_area" class="clearfix">
+		<h1>Something About Radishes</h1>
+		<% if(@comics) %>
+			<h2><%= params[:id] %></h2>
+			<ul>
+			<% @comics.each do |comic| %>
+				<li><a href="/comics/<%= comic.id %>"><%= comic.title %></a></li>
+			<% end %>
+			</ul>
+		<% else %>
+			Awwww, Snap Dragons, couldn't find any in that year....
+		<% end %>
+	</div>
+</div>

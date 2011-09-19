@@ -1,5 +1,7 @@
 PartyTime::Application.routes.draw do
 
+  resources :archive
+
   devise_for :users
 
   root :to => 'comics#index'
