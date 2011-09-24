@@ -5,7 +5,6 @@ class Comic < ActiveRecord::Base
   bucket = "SAR_comic"
   
   #puts storage_loc
-  
   has_attached_file :image,
     :storage => :s3,
     :s3_credentials => {

@@ -9,7 +9,7 @@ PartyTime::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   
   resources :comics
-
+  resources :calendar  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
