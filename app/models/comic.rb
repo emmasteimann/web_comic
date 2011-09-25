@@ -19,7 +19,11 @@ class Comic < ActiveRecord::Base
     self.class.first(:conditions => ['post_date < ? AND post_date <= ? AND disabled = ?', self.post_date, Time.now, false], :limit => 1, :offset => offset, :order => "created_at DESC")
   end
   def next(offset = 0)
-    self.class.first(:conditions => ['post_date > ? AND post_date <= ? AND disabled = ?', self.post_date, Time.now, false], :limit => 1, :offset => offset, :order => "created_at ASC")
+    if Rails.env.development?
+      self.class.first(:conditions => ['post_date > ? AND post_date <= ? AND disabled = ?', self.post_date, Time.now, false], :limit => 1, :offset => offset+1, :order => "created_at ASC")
+    else
+      self.class.first(:conditions => ['post_date > ? AND post_date <= ? AND disabled = ?', self.post_date, Time.now, false], :limit => 1, :offset => offset, :order => "created_at ASC")
+    end
   end
   scope :recent, :limit => 1, :order => 'created_at DESC', :conditions => ['post_date <= ? AND disabled = ?', Time.now, false]
   scope :initial, :limit => 1, :order => 'created_at ASC', :conditions => ['post_date <= ? AND disabled = ?', Time.now, false]
