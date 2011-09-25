@@ -14,7 +14,7 @@ class ComicsController < ApplicationController
     @comics = Comic.recent.first
     @cominit = Comic.initial.first
     @comprev = @comics.previous
-    @comnext = @comics.next(1)
+    @comnext = @comics.next
    # @nextc = Comic.nextc
     
     respond_to do |format|
@@ -31,7 +31,7 @@ class ComicsController < ApplicationController
     @comic = Comic.find(params[:id])
     @cominit = Comic.initial.first
     @comprev = @comic.previous
-    @comnext = @comic.next(1)
+    @comnext = @comic.next
     @comlast = Comic.recent.first
     
     if (@comlast.id != @comic.id)
