@@ -75300,6 +75300,7 @@ Served asset /raphael-min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 26 22:32:36 -0500 2011
 Served asset /application.js - 200 OK (10ms)
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at Mon Sep 26 22:49:24 -0500 2011
@@ -75404,3 +75405,5 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Mon Sep 26 23:03:29 -0500 2011
 Served asset /raphael-min.js - 304 Not Modified (0ms)
+=======
+>>>>>>> 42b8bcbe803170cf86d9f4bcbe384276763a1ef8
