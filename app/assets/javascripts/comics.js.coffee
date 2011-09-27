@@ -1,7 +1,3 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-
 CONFIG =
 	hourImage : "http://s3.amazonaws.com/SAR_comic/asset_19.png"
 	minImage : "http://s3.amazonaws.com/SAR_comic/asset_18.png"
