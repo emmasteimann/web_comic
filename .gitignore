@@ -4,3 +4,4 @@ log/*.log
 tmp/
 .sass-cache/
 config/s3.yml
+config/database.yml
