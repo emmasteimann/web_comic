@@ -23,7 +23,9 @@ setMin = () ->
 getHdeg = () ->
 	(hours = (new Date).getHours())
 	hour = if hours > 12 then hours - 12 else hours
-	((360/12)*hour)
+	(min = (new Date).getMinutes())
+	
+	((360/12)*hour)+((360/(60*12))*min)
 	
 getMdeg = () ->
 	(min = (new Date).getMinutes())

@@ -30,12 +30,14 @@
 				<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a> 
 			<% end %>
 		</div>
-		
-		<div class="comic_info">
+		<div class="comic_details">
 			<h2><%= @comics.title %></h2>
-				<div class="comic_description">
-					<%= @comics.body %>
-				</div>
+			<div class="comic_description">
+				<%= @comics.body %>
+			</div>
+		</div>
+		<div class="comic_info">
+			<h2>Comments</h2>
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
 				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

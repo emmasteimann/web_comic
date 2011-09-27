@@ -37,11 +37,14 @@
 			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>#comic_area">Last</a>
 		<% end %>
 		</div>
-		<div class="comic_info">
+		<div class="comic_details">
 			<h2><%= @comic.title %></h2>
-				<div class="comic_description">
-					<%= @comic.body %>
-				</div>
+			<div class="comic_description">
+				<%= @comic.body %>
+			</div>
+		</div>
+		<div class="comic_info">
+			<h2>Comments</h2>
 			<script type="text/javascript">
 				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 				var disqus_shortname = 'somethingaboutradishes'; // required: replace example with your forum shortname
