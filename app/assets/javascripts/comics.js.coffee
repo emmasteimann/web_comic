@@ -38,7 +38,6 @@ rotateTime = (h,m) ->
 	h.rotate(degH,true)
 	
 	degM = getMdeg()
-	console.log degM
 	m.rotate(degM,true)
 	
 	
