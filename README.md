@@ -9,9 +9,9 @@
 * wrote css/markup
 * added in necessary plugins
 * configured for pushing live to heroku
+* Make fancy javascript for the clock
 
 ## Future
-* Make fancy javascript for the clock
 * Make other fancy animations
 * Add in ckeditor? 
 
