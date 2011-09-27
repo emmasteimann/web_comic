@@ -4,7 +4,6 @@ log/*.log
 tmp/
 .sass-cache/
 config/s3.yml
-<<<<<<< HEAD
 config/database.yml
-=======
->>>>>>> 42b8bcbe803170cf86d9f4bcbe384276763a1ef8
+
+
