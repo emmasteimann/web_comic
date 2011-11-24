@@ -78279,3 +78279,446 @@ Served asset /raphael-min.js - 304 Not Modified (6ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:35:44 -0600 2011
 Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 24 15:37:55 -0600 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:37:55.584155' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:37:55.584230' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:37:55.645740' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:37:55.681813' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1
+Rendered comics/_bookmark.html.erb (0.5ms)
+Rendered comics/index.html.erb within layouts/application (443.0ms)
+Completed 200 OK in 698ms (Views: 643.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /day.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /archive.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /comics.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:37:56 -0600 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/edit/14" for 127.0.0.1 at Thu Nov 24 15:38:01 -0600 2011
+
+ActionController::RoutingError (No route matches [GET] "/edit/14"):
+  
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/comics/14" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:07.636935' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:07.655581' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:07.657170' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:07.636855' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+Rendered comics/_bookmark.html.erb (0.4ms)
+Rendered comics/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 35ms (Views: 19.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /day.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:07 -0600 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/comics/edit/14" for 127.0.0.1 at Thu Nov 24 15:38:12 -0600 2011
+
+ActionController::RoutingError (No route matches [GET] "/comics/edit/14"):
+  
+
+Rendered /Users/gsteimann/.rvm/gems/ree-1.8.7-2011.03/gems/actionpack-3.1.0.rc8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/comics/14" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+  Processing by ComicsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mComic Load (0.5ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:15.265037' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:15.384570' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  [1m[36mComic Load (0.1ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:15.386216' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:15.264952' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 131ms (Views: 14.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /day.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:15 -0600 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comics/14/edit" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+  Processing by ComicsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE "comics"."id" = ? LIMIT 1  [["id", "14"]]
+Rendered comics/_form.html.erb (19.7ms)
+Rendered comics/edit.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 625ms (Views: 38.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /day.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:42 -0600 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comics" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:56.321645' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:38:56.321744' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:56.338364' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.2ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:38:56.340145' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 128ms (Views: 15.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /day.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:38:56 -0600 2011
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GN9ZbjUW/ZjfhJVqzivAsijSaBVtd25XuTofo4EUaqA="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "updated_at" = '2011-11-24 21:39:00.384663', "remember_created_at" = NULL WHERE "users"."id" = 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:39:00.447903' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:39:00.447997' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.4ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:39:00.491989' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.3ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:39:00.494275' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 45ms (Views: 23.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /day.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:00 -0600 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Thu Nov 24 15:39:04 -0600 2011
+  Processing by RailsAdmin::MainController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Thu Nov 24 15:39:04 -0600 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 90ms (Views: 64.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /day.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:05 -0600 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/comics/14/edit" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+  Processing by ComicsController#edit as HTML
+  Parameters: {"id"=>"14"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+  Processing by ComicsController#index as HTML
+  [1m[36mComic Load (0.2ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:39:13.565723' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date <= '2011-11-24 21:39:13.565785' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1
+  [1m[36mComic Load (0.3ms)[0m  [1mSELECT "comics".* FROM "comics" WHERE (post_date < '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:39:13.581311' AND disabled = 'f') ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  [1m[35mComic Load (0.1ms)[0m  SELECT "comics".* FROM "comics" WHERE (post_date > '2011-10-08 05:00:00.000000' AND post_date <= '2011-11-24 21:39:13.582863' AND disabled = 'f') ORDER BY created_at ASC LIMIT 1 OFFSET 1
+Rendered comics/_bookmark.html.erb (0.1ms)
+Rendered comics/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 127ms (Views: 114.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /comics.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/day.css?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /day.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/archive.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /archive.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comics.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /comics.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/raphael-min.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /raphael-min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Nov 24 15:39:13 -0600 2011
+Served asset /application.js - 304 Not Modified (1ms)
