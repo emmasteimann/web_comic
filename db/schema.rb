@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110917023321) do
+ActiveRecord::Schema.define(:version => 20111016044031) do
 
   create_table "assets", :force => true do |t|
     t.string    "name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20110917023321) do
     t.integer   "image_file_size"
     t.timestamp "image_updated_at"
     t.boolean   "disabled",           :default => false
+    t.string    "alt_tag"
   end
 
   create_table "comments", :force => true do |t|
