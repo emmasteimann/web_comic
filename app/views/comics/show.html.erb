@@ -19,7 +19,7 @@
 		<div class="comic_display_area">
 			
 			<p>
-				<img alt="<%= @comic.title %>" src="<%= @comic.image %>">
+				<img class="comic_img comic_<%= @comic.id %>" alt="<%= @comic.title %>" src="<%= @comic.image %>">
 			</p>
 			<%= render 'bookmark' %>
 		</div>

@@ -91,6 +91,9 @@ body {
 		.comic_display_area {
 			margin: 0 auto;
 			text-align: center;
+			.comic_img {
+				border: 6px solid #acaca2;
+			}
 		}
 		.navigation {
 			height: 25px;
