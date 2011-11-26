@@ -1,5 +1,5 @@
 PartyTime::Application.routes.draw do
-
+    
   resources :archive
 
   devise_for :users
