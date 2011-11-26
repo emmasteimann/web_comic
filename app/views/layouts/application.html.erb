@@ -2,6 +2,13 @@
 <html>
 <head>
   <title>Something About Radishes</title>
+	<meta property="og:title" content="Something About Radishes"/>
+  	<meta property="og:type" content="website"/>
+  	<meta property="og:url" content="http://somethingaboutradishes.com/"/>
+  	<meta property="og:image" content="http://s3.amazonaws.com/SAR_comic/asset_20.jpg"/>
+  	<meta property="og:site_name" content="Something About Radishes"/>
+  	<meta property="og:description" content="Something About Radishes is a Web Comic by Emma Steimann, updated...infrequently..."/>
+	<%= csrf_meta_tags %>
 	<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "scaffolds","comics", "reset" %>
 	<% if Time.now.hour < 6 or Time.now.hour >= 18 %>
@@ -10,13 +17,8 @@
 	<%= stylesheet_link_tag "day" %>
 	<% end %>
   <%= javascript_include_tag "application" %>
-	<meta property="og:title" content="Something About Radishes"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://somethingaboutradishes.com/"/>
-    <meta property="og:image" content="http://s3.amazonaws.com/SAR_comic/asset_20.jpg"/>
-    <meta property="og:site_name" content="Something About Radishes"/>
-    <meta property="og:description" content="Something About Radishes is a Web Comic by Emma Steimann, updated...infrequently..."/>
-  <%= csrf_meta_tags %>
+	
+  
 </head>
 <body>
 	<div id="fb-root"></div>
