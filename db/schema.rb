@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126041852) do
+ActiveRecord::Schema.define(:version => 20111126055353) do
 
   create_table "assets", :force => true do |t|
     t.string    "name"
@@ -36,6 +36,13 @@ ActiveRecord::Schema.define(:version => 20111126041852) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "comic_assets", :force => true do |t|
+    t.string   "name"
+    t.string   "alt_text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "comics", :force => true do |t|
     t.string    "title"
