@@ -29,10 +29,10 @@ class Comic < ActiveRecord::Base
   scope :initial, :limit => 1, :order => 'created_at ASC', :conditions => ['post_date <= ? AND disabled = ?', Time.now, false]
   
   scope :current_year, lambda {
-    where("post_date >= ? AND post_date <= ?", DateTime.strptime( Time.now.year.to_s + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( Time.now.year.to_s + "/12/31", "%Y/%m/%d").to_time)
+    where("post_date >= ? AND post_date <= ? AND disabled = ?", DateTime.strptime( Time.now.year.to_s + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( Time.now.year.to_s + "/12/31", "%Y/%m/%d").to_time, false)
   }
   scope :by_year, lambda { |your_year|
-    where("post_date >= ? AND post_date <= ?", DateTime.strptime( your_year + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( your_year + "/12/31", "%Y/%m/%d").to_time)
+    where("post_date >= ? AND post_date <= ? AND disabled = ?", DateTime.strptime( your_year + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( your_year + "/12/31", "%Y/%m/%d").to_time, false)
   }
 end
   

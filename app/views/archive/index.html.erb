@@ -1,12 +1,14 @@
 <div class="wrapper">
-<div id="banner"></div>
+<div id="banner"><div id="min_hand"></div><div id="hour_hand"></div></div>
 	<div id="comic_area" class="clearfix">
 		<h1>Something About Radishes</h1>
-		<h2><%= Time.now.year %></h2>
-		<ul>
-		<% @comics.each do |comic| %>
-			<li><a href="/comics/<%= comic.id %>"><%= comic.title %></a></li>
-		<% end %>
-		</ul>
+		<div class="archive_area">
+			<h2><%= Time.now.year %></h2>
+			<ul>
+			<% @comics.each do |comic| %>
+				<li><a href="/comics/<%= comic.id %>"><%= comic.title %></a></li>
+			<% end %>
+			</ul>
+		</div>
 	</div>
 </div>

@@ -55,6 +55,9 @@ GEM
       xml-simple
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
+    ckeditor (3.6.3)
+      mime-types (~> 1.16)
+      orm_adapter (~> 0.0.5)
     cocaine (0.2.0)
     coffee-rails (3.1.0.rc.7)
       coffee-script (>= 2.2.0)
@@ -147,6 +150,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  ckeditor
   coffee-rails (~> 3.1.0.rc)
   devise!
   disqus

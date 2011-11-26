@@ -41,7 +41,7 @@
 		<div class="comic_details">
 			<h2><%= @comic.title %></h2>
 			<div class="comic_description">
-				<%= @comic.body %>
+				<%= raw @comic.body %>
 			</div>
 		</div>
 		<div class="comic_info">
@@ -59,12 +59,14 @@
 		</div>
 		<div class="social_area">
 			<div class="addthis_toolbox addthis_default_style ">
+				<div class="fb-like" data-href="<%= request.url %>" data-send="true" data-width="450" data-show-faces="true"></div>
+				<!--
 				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 				<a class="addthis_button_tweet"></a>
 				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-				<a class="addthis_counter addthis_pill_style"></a>
+				<a class="addthis_counter addthis_pill_style"></a>-->
 			</div>
-			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e76dff04af2d5d1"></script>
+			<!--<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e76dff04af2d5d1"></script>-->
 			<h2>Rumors a little bird told me...</h2>
 			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 			<script>

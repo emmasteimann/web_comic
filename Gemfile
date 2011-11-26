@@ -13,7 +13,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'disqus'
 gem 'sqlite3'
-
+gem 'ckeditor'
 gem 'json'
 
 gem "execjs"
