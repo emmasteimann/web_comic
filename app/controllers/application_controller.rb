@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   def render_404
     respond_to do |type|
-      type.html { render :template => "error/404.html", :layout => "application", :status => "404 Not Found" }
+      type.html { render :template => "error/404", :layout => "application", :status => "404 Not Found" }
       type.all  { render :nothing  => true, :status => "404 Not Found" }
     end
   end
