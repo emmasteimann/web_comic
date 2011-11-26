@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html 
+xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:og="http://opengraphprotocol.org/schema/" 
+xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
   <title>Something About Radishes</title>
 	<meta content='text/html; charset=utf-8' http-equiv='content-type' />
-	<meta name="title" content="Something About Radishes"/>
-  	<meta name="type" content="website"/>
-  	<meta name="url" content="http://somethingaboutradishes.com/"/>
-  	<meta name="image" content="http://s3.amazonaws.com/SAR_comic/asset_20.jpg"/>
-  	<meta name="site_name" content="Something About Radishes"/>
-  	<meta name="description" content="Something About Radishes is a Web Comic by Emma Steimann, updated...infrequently..."/>
+	<meta name="title" property="og:title" content="Something About Radishes"/>
+  	<meta name="type" property="og:type" content="website"/>
+  	<meta name="url" property="og:url" content="http://somethingaboutradishes.com/"/>
+  	<meta name="image" property="og:image" content="http://s3.amazonaws.com/SAR_comic/asset_20.jpg"/>
+  	<meta name="site_name" property="og:site_name" content="Something About Radishes"/>
+  	<meta name="description" property="og:description" content="Something About Radishes is a Web Comic by Emma Steimann, updated...infrequently..."/>
 	<%= csrf_meta_tags %>
 	<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "scaffolds","comics", "reset" %>
