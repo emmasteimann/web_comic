@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
 <html>
 <head>
   <title>Something About Radishes</title>
@@ -10,6 +12,12 @@
 	<%= stylesheet_link_tag "day" %>
 	<% end %>
   <%= javascript_include_tag "application" %>
+	<meta property="og:title" content="Something About Radishes"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://somethingaboutradishes.com/"/>
+    <meta property="og:image" content="http://s3.amazonaws.com/SAR_comic/asset_20.jpg"/>
+    <meta property="og:site_name" content="Something About Radishes"/>
+    <meta property="og:description" content="Something About Radishes is a Web Comic by Emma Steimann, updated...infrequently..."/>
   <%= csrf_meta_tags %>
 </head>
 <body>

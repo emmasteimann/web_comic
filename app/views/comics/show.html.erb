@@ -9,6 +9,7 @@
 		<% if @comprev %>
 			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>#comic_area">Previous</a>
 		<% end %>
+		<%= link_to "Archive", {:controller => "archive"}, :class => "archive_link" %>
 		<% if @comnext %>
 			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a>
 		<% end %>
