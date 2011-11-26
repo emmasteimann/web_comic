@@ -10,6 +10,9 @@ PartyTime::Application.routes.draw do
   
   resources :comics
 
+  #Last route in routes.rb
+  match '*a', :to => 'application#routing'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
