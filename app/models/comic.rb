@@ -34,5 +34,7 @@ class Comic < ActiveRecord::Base
   scope :by_year, lambda { |your_year|
     where("post_date >= ? AND post_date <= ? AND disabled = ?", DateTime.strptime( your_year + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( your_year + "/12/31", "%Y/%m/%d").to_time, false)
   }
+  scope :between, lambda { |from,to|
+    where("post_date > ? AND post_date <= ? AND disabled = ?", DateTime.strptime( from.to_s() + "/01/01", "%Y/%m/%d").to_time, DateTime.strptime( to.to_s() + "/12/31", "%Y/%m/%d").to_time, false)
+  }
 end
-  

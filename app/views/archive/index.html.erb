@@ -3,10 +3,19 @@
 	<div id="comic_area" class="clearfix">
 		<h1>Something About Radishes</h1>
 		<div class="archive_area">
-			<h2><%= Time.now.year %></h2>
-			<ul>
-			<% @comics.each do |comic| %>
-				<li><a href="/comics/<%= comic.id %>"><%= comic.title %></a></li>
+			<% @comics_all.comics.each do |comic| %> 
+			<h2><%= comic["year"] %></h2>
+			
+			  <% if(comic["comics"].empty?) %>
+			  No comics this year...
+			  <% else %>
+			  <ul>
+    			  <% comic["comics"].each do |comic_list_item| %>
+      				<li><a href="/comics/<%= comic_list_item.id %>"><%= comic_list_item.title %></a></li>
+      			<% end %>
+      	</ul>
+  			<% end %>
+  		
 			<% end %>
 			</ul>
 		</div>
