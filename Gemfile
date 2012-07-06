@@ -8,7 +8,7 @@ gem "paperclip", "~> 2.3"
 #gem 'by_star', :git => 'git://github.com/radar/by_star.git'
 gem 'fastercsv' # Only required on Ruby 1.8 and below
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+# gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'disqus'
@@ -19,9 +19,6 @@ gem 'json'
 gem "execjs"
 gem "therubyracer"
 
-group :development, :test do
-  gem 'sqlite3-ruby', :require => '...'
-end
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
