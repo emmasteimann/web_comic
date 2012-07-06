@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc8'
+gem 'rails', '3.1.0'
 
-gem 'aws-s3', :require => 'sqlite3'
+gem 'aws-s3'
 gem "paperclip", "~> 2.3"
 #gem "will_paginate", "~> 3.0.pre2"
 #gem 'by_star', :git => 'git://github.com/radar/by_star.git'
@@ -19,6 +19,9 @@ gem 'json'
 gem "execjs"
 gem "therubyracer"
 
+group :development, :test do
+  gem 'sqlite3-ruby', :require => '...'
+end
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
