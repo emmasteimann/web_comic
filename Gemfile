@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 
 gem 'aws-s3'
+gem 'aws-sdk'
 gem "paperclip", "~> 2.3"
 #gem "will_paginate", "~> 3.0.pre2"
 #gem 'by_star', :git => 'git://github.com/radar/by_star.git'
@@ -11,6 +12,7 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git' # Devise must 
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'sqlite3'
 gem 'disqus'
 gem 'ckeditor'
 gem 'json'
