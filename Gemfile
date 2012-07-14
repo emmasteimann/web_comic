@@ -11,15 +11,16 @@ gem 'fastercsv' # Only required on Ruby 1.8 and below
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git' # Devise must be required before RailsAdmin
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3'
 gem 'disqus'
 gem 'ckeditor'
 gem 'json'
 
 gem "execjs"
 gem "therubyracer"
-
+group :development do
+  # gems specifically for Heroku go here
+  gem 'sqlite3'
+end
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
