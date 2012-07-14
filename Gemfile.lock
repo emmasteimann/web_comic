@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 1aca139c656dcde06eb9bed3b263d9060d62863a
+  revision: 01d3ed717236f96027110e1a5e0e66bc8cef90c1
   specs:
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 07d734889c23d538ebae7a2776b2f3617d8d9a83
+  revision: 054a537dc5b0e8d80267594756dbbf6c1b58ea4a
   specs:
     rails_admin (0.0.5)
       bbenezech-nested_form (~> 0.0.6)
@@ -116,7 +116,7 @@ GEM
     multi_json (1.3.6)
     multi_xml (0.5.1)
     nokogiri (1.5.5)
-    orm_adapter (0.3.0)
+    orm_adapter (0.4.0)
     paperclip (2.7.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
