@@ -4,6 +4,7 @@ gem 'rails', '3.1.0'
 
 gem 'aws-s3'
 gem 'aws-sdk'
+gem 'newrelic_rpm'
 gem "paperclip", "~> 2.3"
 #gem "will_paginate", "~> 3.0.pre2"
 #gem 'by_star', :git => 'git://github.com/radar/by_star.git'
