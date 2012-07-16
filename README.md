@@ -10,9 +10,10 @@
 * added in necessary plugins
 * configured for pushing live to heroku
 * Make fancy javascript for the clock
+* Add in ckeditor to Rails Admin
 
 ## Future
 * Make other fancy animations
-* Add in ckeditor? 
+
 
 
