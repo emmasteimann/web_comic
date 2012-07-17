@@ -20,7 +20,12 @@ class ComicsController < ApplicationController
     @all_comics = Comic.all_viewable_comics
     respond_to do |format|
       format.html # index.html.erb
-      format.rss { render :layout => false, :collection => @all_comics}
+      format.rss do
+        unless request.env['HTTP_USER_AGENT'] =~ /feedburner/i
+          redirect_to 'http://feeds.feedburner.com/SomethingAboutRadishes'
+        end
+        render :layout => false, :collection => @all_comics
+      end
       format.json { render :json => @comics }
       format.atom { render :layout => false, :collection => @all_comics}
     end
