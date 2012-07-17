@@ -8,9 +8,11 @@ xml.rss :version => "2.0" do
     for comic in @all_comics
       xml.item do
         xml.title comic.title
-        xml.content comic.body, :type => 'html'
-        xml.pubDate comic.updated_at.strftime("%Y-%m-%dT%H:%M:%SZ")
-        xml.media(:content, :url => comic.image, :type => "image/jpeg")
+        xml.description comic.body, :type => 'html'
+        xml.pubDate comic.updated_at
+        xml.image do
+          xml.url comic.image
+        end
         xml.link comic_url(comic)
         xml.guid comic_url(comic)
       end

@@ -51,7 +51,7 @@ body {
 			font-size: 24px;
 		}
 		.comic_tag{
-			
+
 		}
 		.footer_area{
 			text-align: center;
@@ -60,7 +60,7 @@ body {
 		}
 		.archive_area{
 			padding: 20px;
-			
+
 		}
 		.comic_details{
 			width: 600px;
@@ -83,11 +83,16 @@ body {
 			width: 400px;
 			float: left;
 			padding-left: 40px;
+
 			h2 {
 				font-family: 'Hammersmith One', sans-serif;
 				border-bottom: 2px solid #888B88;
 			}
 		}
+		.rss_link {
+				text-decoration: none;
+				color: #633AA1;
+			}
 		.social_area {
 			margin-top: 50px;
 			float: left;
@@ -183,15 +188,15 @@ body {
 	line-height: 0;
 	height: 0;
 }
- 
+
 .clearfix {
 	display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
 	display: block;
 }
- 
+
 * html .clearfix {
 	height: 1%;
 }
