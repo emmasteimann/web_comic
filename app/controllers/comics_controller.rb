@@ -20,6 +20,7 @@ class ComicsController < ApplicationController
     @all_comics = Comic.all_viewable_comics
     respond_to do |format|
       format.html # index.html.erb
+      format.rss { render :layout => false, :collection => @all_comics}
       format.json { render :json => @comics }
       format.atom { render :layout => false, :collection => @all_comics}
     end
