@@ -21,6 +21,7 @@ gem "therubyracer"
 group :development do
   # gems specifically for Heroku go here
   gem 'sqlite3'
+  gem 'pry-rails'
 end
 group :production do
   # gems specifically for Heroku go here

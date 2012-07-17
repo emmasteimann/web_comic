@@ -1,47 +1,48 @@
 class ComicsController < ApplicationController
   # GET /comics
   # GET /comics.json
-  
-  
+
+
   def index
     #@assets = Asset.all.first
-    
+
     #@previous = Comic.previous(@comics).first
     #@next = Comic.next(@comics).first
 
    # @comics = Comic.paginate(:page => params[:page], :per_page => 1, :conditions => ["created_at <= ?", Time.now], :order => "created_at DESC" )
-    
+
+    @COMIC_TITLE = "Something About Radishes"
     @comics = Comic.recent.first
     @cominit = Comic.initial.first
     @comprev = @comics.previous
     @comnext = @comics.next
    # @nextc = Comic.nextc
-    
+    @all_comics = Comic.all_viewable_comics
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @comics }
-      format.atom { render :layout => false }
+      format.atom { render :layout => false, :collection => @all_comics}
     end
   end
 
   # GET /comics/1
   # GET /comics/1.json
   def show
-    
+
     @comic = Comic.find(params[:id])
     @cominit = Comic.initial.first
     @comprev = @comic.previous
     @comnext = @comic.next
     @comlast = Comic.recent.first
-    
+
     if (@comlast.id != @comic.id)
       @comfinal = @comlast
     end
-    
+
     if (@cominit.id != @comic.id)
       @comfirst = @cominit
     end
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @comic }
@@ -76,7 +77,7 @@ class ComicsController < ApplicationController
   # POST /comics.json
   def create
     @comic = Comic.new(params[:comic])
-    
+
     if user_signed_in?
       respond_to do |format|
         if @comic.save
