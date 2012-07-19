@@ -25,7 +25,7 @@ class Comic < ActiveRecord::Base
       self.class.first(:conditions => ['post_date > ? AND post_date <= ? AND disabled = ?', self.post_date, Time.now, false], :limit => 1, :offset => offset, :order => "created_at ASC")
     end
   end
-
+  scope :keep_site_alive, lambda {  puts 'Keep Site Alive!' }
   scope :all_viewable_comics, lambda {  where("disabled = ?", false) }
 
   scope :recent, :limit => 1, :order => 'created_at DESC', :conditions => ['post_date <= ? AND disabled = ?', Time.now, false]
