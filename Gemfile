@@ -15,7 +15,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'disqus'
 gem 'ckeditor'
 gem 'json'
-
+gem "friendly_id", "~> 4.0.1"
 gem "execjs"
 gem "therubyracer"
 group :development do

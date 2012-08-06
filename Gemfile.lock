@@ -90,6 +90,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fastercsv (1.5.5)
+    friendly_id (4.0.8)
     haml (3.1.6)
     hike (1.2.1)
     hpricot (0.8.6)
@@ -204,6 +205,7 @@ DEPENDENCIES
   disqus
   execjs
   fastercsv
+  friendly_id (~> 4.0.1)
   jquery-rails
   json
   newrelic_rpm

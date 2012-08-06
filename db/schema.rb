@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126055353) do
+ActiveRecord::Schema.define(:version => 20120806144910) do
 
   create_table "assets", :force => true do |t|
     t.string    "name"
@@ -24,24 +25,24 @@ ActiveRecord::Schema.define(:version => 20111126055353) do
   end
 
   create_table "ckeditor_assets", :force => true do |t|
-    t.string   "data_file_name",                  :null => false
-    t.string   "data_content_type"
-    t.integer  "data_file_size"
-    t.integer  "assetable_id"
-    t.string   "assetable_type",    :limit => 30
-    t.string   "type",              :limit => 30
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "data_file_name",                  :null => false
+    t.string    "data_content_type"
+    t.integer   "data_file_size"
+    t.integer   "assetable_id"
+    t.string    "assetable_type",    :limit => 30
+    t.string    "type",              :limit => 30
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
   create_table "comic_assets", :force => true do |t|
-    t.string   "name"
-    t.string   "alt_text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.string    "alt_text"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "comics", :force => true do |t|
@@ -56,7 +57,10 @@ ActiveRecord::Schema.define(:version => 20111126055353) do
     t.timestamp "image_updated_at"
     t.boolean   "disabled",           :default => false
     t.string    "alt_tag"
+    t.string    "slug"
   end
+
+  add_index "comics", ["slug"], :name => "index_comics_on_slug", :unique => true
 
   create_table "comments", :force => true do |t|
     t.string    "name"

@@ -4,38 +4,38 @@
 		<h1>Something About Radishes</h1>
 		<div class="navigation">
 		<% if @comfirst %>
-			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>#comic_area">First</a>
+			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.slug %>" href="/comics/<%= @comfirst.slug %>#comic_area">First</a>
 		<% end %>
 		<% if @comprev %>
-			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>#comic_area">Previous</a>
+			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.slug %>" href="/comics/<%= @comprev.slug %>#comic_area">Previous</a>
 		<% end %>
 		<%= link_to "Archive", {:controller => "archive"}, :class => "archive_link" %>
 		<% if @comnext %>
-			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a>
+			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.slug %>" href="/comics/<%= @comnext.slug %>#comic_area">Next</a>
 		<% end %>
 		<% if @comfinal %>
-			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>#comic_area">Last</a>
+			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.slug %>" href="/comics/<%= @comfinal.slug %>#comic_area">Last</a>
 		<% end %>
 		</div>
 		<div class="comic_display_area">
 
 			<p>
-				<img class="comic_img comic_<%= @comic.id %>" title="<%= @comic.alt_tag %>" src="<%= @comic.image %>">
+				<img class="comic_img comic_<%= @comic.slug %>" title="<%= @comic.alt_tag %>" src="<%= @comic.image %>">
 			</p>
 			<%= render 'bookmark' %>
 		</div>
 		<div class="navigation">
 		<% if @comfirst %>
-			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.id %>" href="/comics/<%= @comfirst.id %>#comic_area">First</a>
+			<a class="nav_arrows first" data-disqus-identifier="<%= @comfirst.slug %>" href="/comics/<%= @comfirst.slug %>#comic_area">First</a>
 		<% end %>
 		<% if @comprev %>
-			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.id %>" href="/comics/<%= @comprev.id %>#comic_area">Previous</a>
+			<a class="nav_arrows previous" data-disqus-identifier="<%= @comprev.slug %>" href="/comics/<%= @comprev.slug %>#comic_area">Previous</a>
 		<% end %>
 		<% if @comnext %>
-			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.id %>" href="/comics/<%= @comnext.id %>#comic_area">Next</a>
+			<a class="nav_arrows next" data-disqus-identifier="<%= @comnext.slug %>" href="/comics/<%= @comnext.slug %>#comic_area">Next</a>
 		<% end %>
 		<% if @comfinal %>
-			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.id %>" href="/comics/<%= @comfinal.id %>#comic_area">Last</a>
+			<a class="nav_arrows last"  data-disqus-identifier="<%= @comfinal.slug %>" href="/comics/<%= @comfinal.slug %>#comic_area">Last</a>
 		<% end %>
 		</div>
 		<div class="comic_details">
