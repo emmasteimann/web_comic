@@ -39,16 +39,17 @@ module PartyTime
     config.filter_parameters += [:password]
     # Enable the asset pipeline
     config.assets.enabled = true
-    
+
     config.after_initialize do
-      Disqus::defaults[:account] = "emmasteimann"
+      Disqus::defaults[:account] = "somethingaboutradishes"
       # so that the comments will load up in development environment
+      Disqus::defaults[:api_key] = "c49f9e9b7196"
       Disqus::defaults[:developer] = true
       Disqus::defaults[:container_id] = "disqus_thread"
       Disqus::defaults[:show_powered_by] = false
     end
 
     config.gem 'disqus'
-    
+
   end
 end
